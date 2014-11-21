@@ -1,0 +1,23 @@
+A package I am using to set up a reasonably OK environment to work with SUSE
+package in Arch Linux.
+
+* Assumptions&Warnings
+- Package building is *NOT* tested, though it should work (after all it's just
+=chroot=).
+
+- I'am focusing more on the code review&patching part.
+
+  Building is done on a =openSUSE= machine.
+
+- The translation part in SPEC is completely ignored.
+  
+  It's hard to get these right without installing many POT files. And the
+  translation texts are usually not relevant for code.
+  
+* Usage
+
+Just install it. Most dependences are in =AUR= though, like =rpm-org=. You may
+need to manually install them.
+
+* Detailed Explanation
+I'll write a post for this later.
