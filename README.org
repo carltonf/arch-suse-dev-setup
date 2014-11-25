@@ -1,13 +1,17 @@
-A package I am using to set up a reasonably OK environment to work with SUSE
-package in Arch Linux.
+Several packages needed to have a reasonably OK environment to work with SUSE
+packages (OBS) in Arch Linux.
 
 * Assumptions&Warnings
-- Package building is *NOT* tested, though it should work (after all it's just
-=chroot=).
-
 - I'am focusing more on the code review&patching part.
 
-  Building is done on a =openSUSE= machine.
+  On my setup building is done on a =openSUSE= machine.
+
+- =quilt setup=, =osc commit=, =osc sr(mr)=
+  
+  Most =osc= commands should work.
+
+- Package building is *NOT* tested, though it should work (after all it's just
+=chroot=).
 
 - The translation part in SPEC is completely ignored.
   
@@ -18,6 +22,3 @@ package in Arch Linux.
 
 Just install it. Most dependences are in =AUR= though, like =rpm-org=. You may
 need to manually install them.
-
-* Detailed Explanation
-I'll write a post for this later.
