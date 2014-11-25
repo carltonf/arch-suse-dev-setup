@@ -1,7 +1,7 @@
 # Maintainer: Carl Xiong <xiongc05@gmail.com>
 
-pkgname=obs-service-format_spec_file-git
 _pkgname=obs-service-format_spec_file
+pkgname=${_pkgname}-git
 pkgver=r82.b7929d7
 pkgrel=1
 pkgdesc='An OBS source service: reformat SPEC file to SUSE standard. Git version.'
@@ -10,14 +10,13 @@ url='https://github.com/openSUSE/obs-service-format_spec_file'
 license=('GPL2')
 depends=('obs-service-source_validator')
 makedepends=('git')
-conflicts=('obs-service-format_spec_file')
-provides=('obs-service-format_spec_file')
-source=("${_pkgname}::git://github.com/openSUSE/obs-service-format_spec_file.git")
+conflicts=("${_pkgname}")
+provides=("${_pkgname}")
+source=("${_pkgname}::git://github.com/openSUSE/${_pkgname}.git")
 md5sums=('SKIP')
 
 pkgver() {
   cd "$srcdir/${_pkgname}"
-  pwd
   printf 'r%s.%s' "$(git rev-list --count HEAD)" "$(git describe --always)"
 }
 
