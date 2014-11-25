@@ -15,7 +15,11 @@ arch=('i686' 'x86_64')
 url="https://en.opensuse.org/Main_Page"
 license=('GPL2')
 # pulls in all necessary dependencies
-depends=('rpm-org' 'osc')
+depends=('rpm-org'
+         'osc'
+         'obs-service-format_spec_file'
+         'obs-service-source_validator'
+         'perl-timedate')
 optdepends=(
   'quilt: patch management'
 )
