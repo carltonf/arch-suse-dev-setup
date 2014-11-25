@@ -14,7 +14,6 @@ pkgdesc="A package bundles all necessary files for SUSE-related code reviewing."
 arch=('i686' 'x86_64')
 url="https://en.opensuse.org/Main_Page"
 license=('GPL2')
-# pulls in all necessary dependencies
 depends=('rpm-org'
          'osc'
          'obs-service-format_spec_file'
